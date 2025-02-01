@@ -915,7 +915,7 @@ export default function Timeline() {
                                 className="bg-white/10 text-white px-4 py-1 my-auto rounded hover:bg-white/20 transition whitespace-nowrap backdrop-blur-[1px]"
                                 onClick={() => setViewMode(viewMode === 'timeline' ? 'cards' : 'timeline')}
                             >
-                                {viewMode === 'timeline' ? 'Switch to Cards' : 'Switch to Timeline'}
+                                {viewMode === 'timeline' ? '切换到卡片视图' : '切换到时间轴视图'}
                             </button>
                             {viewMode === 'timeline' && (
                                 <>
@@ -923,16 +923,16 @@ export default function Timeline() {
                                         className="bg-white/10 text-white px-4 py-1 my-auto rounded hover:bg-white/20 transition whitespace-nowrap backdrop-blur-[1px]"
                                         onClick={zoomOut}
                                     >
-                                        Zoom Out
+                                        缩小
                                     </button>
                                     <button
                                         className="bg-white/10 text-white px-4 py-1 my-auto rounded hover:bg-white/20 transition whitespace-nowrap backdrop-blur-[1px]"
                                         onClick={zoomIn}
                                     >
-                                        Zoom In
+                                        放大
                                     </button>
                                     <span className="text-white/60 ml-2 my-auto">
-                                        {`Zoom: ${pixelsPerDay}px/day`}
+                                        {`比例: ${pixelsPerDay}像素/天`}
                                     </span>
                                 </>
                             )}
