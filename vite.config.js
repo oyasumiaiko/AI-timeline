@@ -11,5 +11,5 @@ export default defineConfig({
             },
         })
     ],
-    base: '/', // Use root path since we're using a custom domain
+    base: '/AI-timeline/',
 });
